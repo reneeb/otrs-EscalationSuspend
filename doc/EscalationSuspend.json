@@ -1,0 +1,62 @@
+{
+    "name": "EscalationSuspend",
+    "version": "4.0.1",
+    "framework": [
+        "4.0.x"
+    ],
+    "vendor": {
+        "name":  "Perl-Services.de",
+        "url": "http://www.perl-services.de"
+    },
+    "license": "GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007",
+    "description" : {
+        "en": "Improve escalation feature of OTRS",
+        "de": "Verbessert Eskalationsfeature von OTRS"
+    },
+    "database" : [
+        {
+            "type": "Insert",
+            "name": "ticket_history_type",
+            "version": 0,
+            "columns": [
+                { "name": "name", "type": "Quote", "value": "CalculatedEscalationTime" },
+                { "name": "comments", "type": "Quote", "value": "Changed escalation time for ticket" },
+                { "name": "valid_id", "value": "1" },
+                { "name": "create_time", "type": "Quote", "value": "2012-10-18 00:00:00" },
+                { "name": "create_by", "value": "1" },
+                { "name": "change_time", "type": "Quote", "value": "2012-10-18 00:00:00" },
+                { "name": "change_by", "value": "1" }
+            ]
+        },
+        {
+            "type": "Insert",
+            "name": "ticket_history_type",
+            "version": 0,
+            "columns": [
+                { "name": "name", "type": "Quote", "value": "PausedEscalationTime" },
+                { "name": "comments", "type": "Quote", "value": "paused escalation time for ticket" },
+                { "name": "valid_id", "value": "1" },
+                { "name": "create_time", "type": "Quote", "value": "2012-10-18 00:00:00" },
+                { "name": "create_by", "value": "1" },
+                { "name": "change_time", "type": "Quote", "value": "2012-10-18 00:00:00" },
+                { "name": "change_by", "value": "1" }
+            ]
+        }
+    ],
+    "intro": [
+        {
+            "type": "Install",
+            "version": 0,
+            "lang": "en",
+            "title": "Thank you!",
+            "text": "Thank you for choosing the EscalationSuspend module."
+        },
+        {
+            "type": "Install",
+            "version": 0,
+            "lang": "de",
+            "title": "Vielen Dank!",
+            "text": "Vielen Dank für die Wahl des EscalationSuspend Moduls."
+        }
+    ]
+}
